@@ -1593,7 +1593,7 @@ enum TerminalExceptionCodeApi: Int {
     case readerSettingsError
     case confirmInvalidSetupIntent
     case mobileWalletNotSupportedOnSetupIntents
-    case invalidSurchargeParamater
+    case invalidSurchargeParameter
     case readerCommunicationSslError
 }
 

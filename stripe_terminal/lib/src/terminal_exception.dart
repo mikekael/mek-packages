@@ -522,7 +522,7 @@ enum TerminalExceptionCode {
   mobileWalletNotSupportedOnSetupIntents,
 
   /// Only Android, A surcharging parameter is misconfigured or invalid
-  invalidSurchargeParamater,
+  invalidSurchargeParameter,
 
   /// Only Android, Could not communicate to the reader due to SSL handshake failures.
   /// Typically occurs when your device is missing SSL certificates, check that you have the required SSL certificates installed on your device.
