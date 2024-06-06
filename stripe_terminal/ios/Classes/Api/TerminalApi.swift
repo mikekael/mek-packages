@@ -1591,6 +1591,10 @@ enum TerminalExceptionCodeApi: Int {
     case collectInputsTimedOut
     case collectInputsUnsupported
     case readerSettingsError
+    case confirmInvalidSetupIntent
+    case mobileWalletNotSupportedOnSetupIntents
+    case invalidSurchargeParamater
+    case readerCommunicationSslError
 }
 
 struct TipApi {

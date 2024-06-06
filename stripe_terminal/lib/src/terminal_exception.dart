@@ -513,6 +513,21 @@ enum TerminalExceptionCode {
 
   /// Only Android. Error reported when an attempt to get or set reader settings has failed.
   readerSettingsError,
+
+  /// Only Android, Terminal.confirmSetupIntent was called with an invalid SetupIntent.
+  /// You must confirm a SetupIntent after collecting a payment method. Successfully confirmed SetupIntents may not be confirmed again.
+  confirmInvalidSetupIntent,
+
+  /// Only Android, Attempted to confirm a SetupIntent with a mobile wallet.
+  mobileWalletNotSupportedOnSetupIntents,
+
+  /// Only Android, A surcharging parameter is misconfigured or invalid
+  invalidSurchargeParamater,
+
+  /// Only Android, Could not communicate to the reader due to SSL handshake failures.
+  /// Typically occurs when your device is missing SSL certificates, check that you have the required SSL certificates installed on your device.
+  /// If the error persists, contact Stripe support.
+  readerCommunicationSslError,
   ;
 
   final String? message;
